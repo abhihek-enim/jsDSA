@@ -14,5 +14,5 @@ function isPalindrome(str, start = 0, end = str.length - 1) {
 // Example usage
 let str = "A man, a plan, a canal: Panama";
 str = str.toLowerCase().replace(/[^a-z0-9]/g, "");
-console.log(str);
+
 console.log(isPalindrome(str));
