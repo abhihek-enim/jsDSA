@@ -1,11 +1,12 @@
-function fibonacci(num, a = 0, b = 1) {
-  if (num === 0) {
-    console.log(a);
-    return;
+function fibonacci(num) {
+  if (num == 0) {
+    return 0;
   }
-
-  console.log(a);
-  return fibonacci(num - 1, b, a + b);
+  if (num == 1) {
+    return 1;
+  }
+  return fibonacci(num - 1) + fibonacci(num - 2);
 }
 
-fibonacci(5);
+let sum = fibonacci(4);
+console.log(sum);
